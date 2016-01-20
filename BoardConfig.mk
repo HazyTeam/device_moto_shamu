@@ -20,6 +20,13 @@ TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
 
+# Inline kernel building
+#TARGET_KERNEL_CONFIG := shamu_defconfig
+#TARGET_KERNEL_SOURCE := kernel/moto/shamu
+#BOARD_KERNEL_IMAGE_NAME := zImage-dtb
+#KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+#KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
+
 ENABLE_CPUSETS := true
 
 TARGET_NO_BOOTLOADER := true
